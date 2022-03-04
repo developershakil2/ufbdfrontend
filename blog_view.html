@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!--------------google analytics: start------------------->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175448919-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175448919-1');
+</script>
+<!--------------google analytics: end------------------->
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+
+    <title>Universal Foundation</title>
+</head>
+<body>
+    
+    <div id="popup2" style=" border:6px solid #fb5200; border-radius:20px;"  class="card  card-body col-lg-6 col-md-8 mx-auto">
+        
+        <button id="close_icon2" onClick="popup2()" style="background:transparent; border:none; outline:none"  ><img style="float:right; margin-right:5px;" height="40px" width="40px" src="assets/images/clp.png" alt=""></button>
+        <form id="formi_one" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
+                 <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Quick Donate</h3>
+            <div class=" px-4">                 
+                <div class="row m-auto text-center mb-4">
+                   <div style="margin-bottom:20px !important;" class="row m-auto text-center">
+                    <div class=" col-6 mb-2  m-auto">
+                        <small class="text-muted">Total Amount</small>
+                        <input id="totalamount" type="number" name="full_name" placeholder="Amount" class="form-control " required>
+                    </div>
+                    <div class="col-6 mb-2 m-auto">
+                        <small class="text-muted">select plan</small>
+                        <select name="country" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="single">single donation</option>
+                            <option value="monthly">monthly donation</option>
+                        </select>
+                    </div>
+                   </div>
+                   <div class="row mt-4 text-center m-auto">
+                       
+                    <div class="col-6 mt-4 m-auto">
+                        <select name="country" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="single"> SADAQA</option>
+                            <option value="monthly">ZAKAT</option>
+                            <option value="monthly">Genaral Donation</option>
+                        </select>
+                    </div>
+                   
+                    <div class="col-6 mt-4 m-auto">
+                       
+                        <input style="width:100%; font-size:14px;  border-radius:15px; " id="send" value="Donate Now" type="submit" class="form-control ">
+                    </div>
+
+                </div>
+               
+            </div>
+            <p style=" font-weight:bold; color:#fb5200; text-align:center;
+            margin-top:18px !important;">HotLine :   +8801715-412204</p>
+        
+
+           </div>
+            </form>
+      </div>
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <div class="fixed-bottom text-center">
+        <button onClick="openpop()" style="width:200px; padding-top:5px; border-radius:6px" class="btn btn-danger btn-sm" style="border-radius: 20px 20px 0 0;"> Quick Donate</button>
+    </div>
+<!--====== HEADER PART START ======-->
+<header class="header_area">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_wrapper d-md-flex justify-content-between">
+                    <div class="header_social text-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul>
+                    </div> <!-- header social -->
+
+                    <div class="header_info d-none d-md-block">
+                        <ul>
+                            <li><img src="assets/images/call.png"><a href="javascript:void(0)">+8801715-412204</a></li>
+                            <li><img src="assets/images/mail.png"><a href="javascript:void(0)">info@ufbd.org</a></li>
+                        </ul>
+                    </div> <!-- header info -->
+                </div> <!-- header top wrapper -->
+            </div> <!-- container -->
+        </div> <!-- header top -->
+
+        <div class="header_navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_btn">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbar_btn">
+                        <ul class="navbar-nav m-auto">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0)">About us<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="Board_member.html">Board Members</a></li>
+                                    <li><a href="volunteers.html">Volunteers</a></li>
+                                    <li><a href="partners.html">Our Partners</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                    <li><a href="report.html">Financial Reports</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="javascript:void(0)">Media<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">News</a></li>
+                                    <li><a href="img_gallery.html">Image Gallery</a></li>
+                                    <li><a href="vdo_gallery.html">Video Gallery</a></li>
+                                    <li><a href="zakat_calc.html">Zakat Calculator</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-user"></i> Account<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="profile.html">Account</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </div> <!-- navbar collapse -->
+
+                    <div class="navbar_btn d-none d-sm-block">
+                        <a class="main-btn" href="donate.html"><i class="fa fa-heart"></i> Donate Now</a>
+                    </div>
+
+                </nav> <!-- navbar -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+    <!--====== PAGE CONTENT START ======-->
+    <section class="causes_area pt-160 pb-70">
+    <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
+                        <div class="causes_details mt-20">
+                            <h3 class="causes_details_title">Charity can help make smile of poor people</h3>
+                            <div class="causes_details_image">
+                                <img src="assets/images/blog-list-1.jpg">
+                            </div>
+                            <div class="causes_details_content">
+                                <p>Helpgrove is a nonproﬁt organizationsupported by community leaders Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea. <br> <br> Phaedrum torquatos alienum nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="causes_details_image">
+                                        <img src="assets/images/causes-details-1.png" alt="details">
+                                    </div> <!-- causes details image -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="causes_details_image">
+                                        <video controls class="w-100">
+                                          <source src="assets/images/video.mp4" type="video/mp4">
+                                          Your browser does not support HTML video.
+                                        </video>
+                                    </div> <!-- causes details image -->
+                                </div>
+                            </div> <!-- row -->
+                            <div class="causes_details_content">
+                                <p>Helpgrove is a nonproﬁt organizationsupported by community leaders Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea. <br> <br> Phaedrum torquatos alienum nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id.</p>
+                            </div>
+                            
+                        </div> <!-- causes details -->
+                        <div class="causes_details_form">
+                            <h3 class="causes_details_form_title">Post Comment</h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-8 col-sm-12">
+                                    <form action="#">
+                                        <div class="single_form">
+                                            <input type="text" name="name" placeholder="Name *" required>
+                                        </div> <!-- single form -->
+                                        <div class="single_form">
+                                            <input type="email" name="email" placeholder="Email *" required>
+                                        </div> <!-- single form -->
+                                        <div class="single_form">
+                                            <textarea name="comment" placeholder="Comment" required></textarea>
+                                        </div> <!-- single form -->
+                                        <div class="single_form">
+                                            <button type="submit" class="main-btn">Post Comment</button>
+                                        </div> <!-- single form -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div> <!-- causes details form -->
+                        <div class="container">
+                            <div class="row mt-50">
+                            <div class="col-12">
+                                <div class="row">
+                                        <h3 class="causes_details_form_title">Comments</h3>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-12">
+                                        <!--comment :start-->
+                                            <div class="row mx-4 mb-4">
+                                                <div class="col-12">
+                                                    <small><strong class="mr-2">Abu Saif</strong> 30.10.2017</small>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta exercitationem dolor eos tempore error!</p>
+                                                </div>
+                                            </div>
+                                        <!--comment :end-->
+                                        <!--comment :start-->
+                                            <div class="row mx-4 mb-4">
+                                                <div class="col-12">
+                                                    <small><strong class="mr-2">Umaiya</strong> 30.10.2017</small>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Sequi enim quae officia voluptatibus corrupti consectetur nam dolorum natus nemo omnis?</p>
+                                                </div>
+                                            </div>
+                                        <!--comment :end-->
+                                        <!--comment :start-->
+                                            <div class="row mx-4 mb-4">
+                                                <div class="col-12">
+                                                    <small><strong class="mr-2">Adnan Habib</strong> 30.10.2017</small>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo quasi eaque minima odio itaque libero iste aut, quas, repellendus sit, laudantium distinctio. Iste incidunt quidem magni numquam distinctio, fugiat praesentium velit omnis laudantium quae dolorem autem assumenda quod culpa deserunt ex ad facilis cupiditate odio ullam fuga nisi illum?</p>
+                                                </div>
+                                            </div>
+                                        <!--comment :end-->
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                </div> <!-- row -->
+            </div>
+    </section>
+    <!--====== PAGE CONTENT ENDS ======-->
+    <!--====== VOLUNTEER SILDER PART START ======-->
+    <section class="campaing_doner_area">
+        <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <hr class="text-muted mb-4">
+            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                            <a href="volunteer_form.html" class="d-block">
+                                <div class="card ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/bd_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For Local Volunteer</h4>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="" class="d-block">
+                                <div class="card card-body ra_for shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/global_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For International Volunteer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+        </div>
+    <!-- Section heading -->
+    <h3 class="text-center font-weight-bold mb-4">Our Volunteers</h3>
+    <!-- Grid row -->
+    <div class="row">
+    <div class="col-12">
+        <div class="volunteers_slider">
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body" style="width: 15rem; border: 0;">
+                <img class="card-img-top shadow-sm" src="assets/images/volunteer-1.jpg" style="max-width: 200px; max-height: 200px; border-radius: 50%;">
+                <h5 class="card-title text-center mt-2">Usman Fariq</h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+        </div>
+    </div>      
+    </div>
+    <!-- Grid row -->
+</div>
+    </section>
+    <!--====== VOLUNTEER SILDER PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+    <footer class="footer_area">
+        <div class="footer_widget pt-80 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 order-md-1 order-lg-1 mb-4">
+                        <div class="footer_about">
+                            <a href="#">
+                                <img src="assets/images/logo.png">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi in, nihil ab, facere dolor atque quam delectus sapiente aspernatur, molestiae ullam dolores, voluptas accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 order-md-3 order-lg-2 mb-4">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Menu</h5>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Link</h5>
+                                <ul class="link">
+                                    <li><a href="#">Water Purify</a></li>
+                                    <li><a href="#">Food Collect</a></li>
+                                    <li><a href="#">Health Fund</a></li>
+                                    <li><a href="#">Free Education</a></li>
+                                    <li><a href="#">Poor Health</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-md-2 order-lg-3">
+                        <div class="footer_contact mb-4">
+                            <h5 class="footer_title mb-2">Contact us</h5>
+                            <p style="color: #a1a1a1f0;">43, North Dhanmondi Kalabagan, Dhaka-1205</p>
+                        </div>
+                        <div class="footer_subscribe">
+                            <h5 class="footer_title">Subscribe Our Newsletter</h5>
+                            <div class="subscribe_form mt-2">
+                                <form action="#">
+                                    <input type="email" name="subscribe_mail" placeholder="example@mail.com" required>
+                                    <button><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            
+                        </div> <!-- footer link  --> 
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer_copyright text-center">
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright &copy; UFBD 2022. All Rights Reserved.</p>
+                </div> <!-- copyright -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== GO TO TOP PART START ======-->
+    
+    <div class="go-top-area">
+        <div class="go-top-wrap">
+            <div class="go-top-btn-wrap">
+                <div class="go-top go-top-btn">
+                    <i class="fa fa-angle-double-up"></i>
+                    <i class="fa fa-angle-double-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--====== GO TO TOP PART ENDS ======-->
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+<script>
+var slider3 = tns({
+    container: ".volunteers_slider",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!--------------google analytics: start------------------->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175448919-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175448919-1');
+</script>
+<!--------------google analytics: end------------------->
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+
+    <title>Universal Foundation</title>
+</head>
+<style>
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+#image-gallery .modal-footer{
+  display: block;
+}
+#image-gallery-title{
+    font-family: unset;
+}
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+</style>
+<body>
+  
+  <div id="popup2" style=" border:6px solid #fb5200; border-radius:20px;"  class="card  card-body col-lg-6 col-md-8 mx-auto">
+        
+    <button id="close_icon2" onClick="popup2()" style="background:transparent; border:none; outline:none"  ><img style="float:right; margin-right:5px;" height="40px" width="40px" src="assets/images/clp.png" alt=""></button>
+    <form id="formi_one" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
+             <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Quick Donate</h3>
+        <div class=" px-4">                 
+            <div class="row m-auto text-center mb-4">
+               <div style="margin-bottom:20px !important;" class="row m-auto text-center">
+                <div class=" col-6 mb-2  m-auto">
+                    <small class="text-muted">Total Amount</small>
+                    <input id="totalamount" type="number" name="full_name" placeholder="Amount" class="form-control " required>
+                </div>
+                <div class="col-6 mb-2 m-auto">
+                    <small class="text-muted">select plan</small>
+                    <select name="country" class="form-control">
+                        <option selected disabled>Select</option>
+                        <option value="single">single donation</option>
+                        <option value="monthly">monthly donation</option>
+                    </select>
+                </div>
+               </div>
+               <div class="row mt-4 text-center m-auto">
+                   
+                <div class="col-6 mt-4 m-auto">
+                    <select name="country" class="form-control">
+                        <option selected disabled>Select</option>
+                        <option value="single"> SADAQA</option>
+                        <option value="monthly">ZAKAT</option>
+                        <option value="monthly">Genaral Donation</option>
+                    </select>
+                </div>
+               
+                <div class="col-6 mt-4 m-auto">
+                   
+                    <input style="width:100%; font-size:14px;  border-radius:15px; " id="send" value="Donate Now" type="submit" class="form-control ">
+                </div>
+
+            </div>
+           
+        </div>
+        <p style=" font-weight:bold; color:#fb5200; text-align:center;
+        margin-top:18px !important;">HotLine :   +8801715-412204</p>
+    
+
+       </div>
+        </form>
+  </div>
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <div class="fixed-bottom text-center">
+      <button onClick="openpop()" style="width:200px; padding-top:5px; border-radius:6px" class="btn btn-danger btn-sm" style="border-radius: 20px 20px 0 0;"> Quick Donate</button>
+  </div>
+
+<!--====== HEADER PART START ======-->
+<header class="header_area">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_wrapper d-md-flex justify-content-between">
+                    <div class="header_social text-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul>
+                    </div> <!-- header social -->
+
+                    <div class="header_info d-none d-md-block">
+                        <ul>
+                            <li><img src="assets/images/call.png"><a href="javascript:void(0)">+8801715-412204</a></li>
+                            <li><img src="assets/images/mail.png"><a href="javascript:void(0)">info@ufbd.org</a></li>
+                        </ul>
+                    </div> <!-- header info -->
+                </div> <!-- header top wrapper -->
+            </div> <!-- container -->
+        </div> <!-- header top -->
+
+        <div class="header_navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_btn">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbar_btn">
+                        <ul class="navbar-nav m-auto">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0)">About us<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                  <li><a href="Board_member.html">Board Members</a></li>
+                                    <li><a href="volunteers.html">Volunteers</a></li>
+                                    <li><a href="partners.html">Our Partners</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                    <li><a href="report.html">Financial Reports</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="javascript:void(0)">Media<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">News</a></li>
+                                    <li><a href="img_gallery.html">Image Gallery</a></li>
+                                    <li><a href="vdo_gallery.html">Video Gallery</a></li>
+                                    <li><a href="zakat_calc.html">Zakat Calculator</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-user"></i> Account<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="profile.html">Account</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </div> <!-- navbar collapse -->
+
+                    <div class="navbar_btn d-none d-sm-block">
+                        <a class="main-btn" href="donate.html"><i class="fa fa-heart"></i> Donate Now</a>
+                    </div>
+
+                </nav> <!-- navbar -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+    <!--====== PAGE CONTENT START ======-->
+    <section class="causes_area pt-160 pb-50">
+        <div class="container">
+            <h4 class="doner_title text-center">Video Gallery</h4>
+    <div class="row mt-4 justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: fit-content;">
+            <small class="text-muted d-block">this is video caption</small>
+            <video controls style="width: 100%;">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+    <div>
+</div>
+    </section>
+    <!--====== PAGE CONTENT ENDS ======-->
+    <!--====== VOLUNTEER SILDER PART START ======-->
+    <section class="campaing_doner_area">
+        <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <hr class="text-muted mb-4">
+            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                            <a href="volunteer_form.html" class="d-block">
+                                <div class="card ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/bd_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For Local Volunteer</h4>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="" class="d-block">
+                                <div class="card ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/global_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For International Volunteer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+        </div>
+    <!-- Section heading -->
+   
+</div>
+    </section>
+    <!--====== VOLUNTEER SILDER PART ENDS ======-->
+    
+
+
+
+
+
+
+
+
+
+<!--====== Highlights Program START ======-->
+<section class="volunteer_area pt-130 pb-40">
+  <h2 style="text-align:center; padding-bottom:20px;" calss="text-center py-4">Heighilight Program</h2>
+<div class="container">
+  <!-- Grid row -->
+<div class="row">
+<div class="col-12">
+  <div class="sponsors_highlight_slider1">
+      <!-- Grid column -->
+      <div style="background:transparent;" class="tiny-slide">
+        <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                  <div class="causes_image one">
+                      <img src="assets/images/causes-1.jpg" alt="causes">
+                     
+
+                      
+                  </div>
+                 
+              </div>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div style="background:transparent;" class="tiny-slide">
+        <div style="background:transparent;" class="card card-body p-0 single_causes causes_color_1 mt-30">
+                  <div style="background:transparent;" class="causes_image one">
+                      <img src="assets/images/causes-1.jpg" alt="causes">
+
+                  </div>
+                
+              </div>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="tiny-slide">
+        <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                  <div class="causes_image one">
+                      <img src="assets/images/causes-1.jpg" alt="causes">
+                     
+                      </div>
+                  
+                  
+              </div>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="tiny-slide">
+        <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                  <div class="causes_image one">
+                      <img src="assets/images/causes-1.jpg" alt="causes">
+                     
+                  </div>
+                 
+              </div>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="tiny-slide">
+        <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                  <div class="causes_image one">
+                      <img src="assets/images/causes-1.jpg" alt="causes">
+                  
+                  </div>
+              </div>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="tiny-slide">
+        <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                  <div class="causes_image one">
+                      <img src="assets/images/causes-1.jpg" alt="causes">
+                    
+                  </div>
+                  
+              </div>
+              
+      </div>
+      <!-- Grid column -->
+
+  </div>
+</div>      
+</div>
+<!-- Grid row -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- container -->
+</section>
+<!--====== Highlights Program ENDS ======-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--====== FOOTER PART START ======-->
+    <footer class="footer_area">
+        <div class="footer_widget pt-80 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 order-md-1 order-lg-1 mb-4">
+                        <div class="footer_about">
+                            <a href="#">
+                                <img src="assets/images/logo.png">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi in, nihil ab, facere dolor atque quam delectus sapiente aspernatur, molestiae ullam dolores, voluptas accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 order-md-3 order-lg-2 mb-4">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Menu</h5>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Link</h5>
+                                <ul class="link">
+                                    <li><a href="#">Water Purify</a></li>
+                                    <li><a href="#">Food Collect</a></li>
+                                    <li><a href="#">Health Fund</a></li>
+                                    <li><a href="#">Free Education</a></li>
+                                    <li><a href="#">Poor Health</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-md-2 order-lg-3">
+                        <div class="footer_contact mb-4">
+                            <h5 class="footer_title mb-2">Contact us</h5>
+                            <p style="color: #a1a1a1f0;">43, North Dhanmondi Kalabagan, Dhaka-1205</p>
+                        </div>
+                        <div class="footer_subscribe">
+                            <h5 class="footer_title">Subscribe Our Newsletter</h5>
+                            <div class="subscribe_form mt-2">
+                                <form action="#">
+                                    <input type="email" name="subscribe_mail" placeholder="example@mail.com" required>
+                                    <button><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            
+                        </div> <!-- footer link  --> 
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer_copyright text-center">
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright &copy; UFBD 2022. All Rights Reserved.</p>
+                </div> <!-- copyright -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== GO TO TOP PART START ======-->
+    <div class="go-top-area">
+        <div class="go-top-wrap">
+            <div class="go-top-btn-wrap">
+                <div class="go-top go-top-btn">
+                    <i class="fa fa-angle-double-up"></i>
+                    <i class="fa fa-angle-double-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!--====== GO TO TOP PART ENDS ======-->
+<!--gallery modal view :start-->
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header py-1">
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+            </div>
+            <div class="modal-footer py-1">
+                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                </button>
+
+                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--gallery modal view :end-->
+<script src="assets/js/index.js"></script>
+    
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+<script>
+let modalId = $('#image-gallery');
+
+$(document)
+  .ready(function () {
+
+    loadGallery(true, 'a.thumbnail');
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
+</script>
+<script>
+  var slider = tns({
+    container: ".sponsors_highlight_slider1",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    
+    controlsPosition: "bottom",
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+var slider3 = tns({
+    container: ".volunteers_slider",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+</script>
+</body>
+</html>

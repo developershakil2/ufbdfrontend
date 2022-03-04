@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!--------------google analytics: start------------------->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175448919-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175448919-1');
+</script>
+<!--------------google analytics: end------------------->
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+    <link rel="stylesheet" href="dist/css/splide.min.css">
+    <title>Universal Foundation</title>
+</head>
+<style>
+.tns-controls{
+    text-align: center;
+    margin-top: 1rem;
+}
+.tns-controls button{
+    background-color: #898ce7;
+    border: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 4px 10px;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+</style>
+<body>
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <div class="fixed-bottom text-center">
+        <button onClick="openpop()" style="width:200px; padding-top:5px; border-radius:6px" class="btn btn-danger btn-sm" style="border-radius: 20px 20px 0 0;"> Quick Donate</button>
+    </div>
+
+
+    <div id="popup" style=" border:6px solid #fb5200; border-radius:20px;" class="card card-body col-lg-6 col-md-8 mx-auto">
+        
+        <button id="close_icon" onClick="popup()" style="background:transparent; border:none; outline:none"  ><img style="float:right; margin-right:5px;" height="40px" width="40px" src="assets/images/clp.png" alt=""></button>
+        <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Our News Later</h3>
+        <form action="" method="POST">
+          <div class="row">
+            <div class="col-12">
+                <small  style=" color:#fb5200;" class=" text">Name</small>
+                <input type="text" name="email" class="form-control" required>
+              </div>
+            <div class="col-12">
+              <small  style=" color:#fb5200;" class=" text">Email</small>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="col-12">
+                <small  style=" color:#fb5200;" class=" text ">Phone No :</small>
+                <input type="number" name="email" class="form-control mb-5" required>
+                <div class="col-12 text-center">
+                    <button style="margin-top:-20px; cursor:pointer;width:200px; border-radius:15px; background:#fb5200; color:#fff; "  class=" btn btn-outline">submit</button>
+                  </div>
+              </div>
+              
+          </div>
+        </form>
+      </div>
+
+      
+    <div id="popup2" style=" border:6px solid #fb5200; border-radius:20px;"  class="card  card-body col-lg-6 col-md-8 mx-auto">
+        
+        <button id="close_icon2" onClick="popup2()" style="background:transparent; border:none; outline:none"  ><img style="float:right; margin-right:5px;" height="40px" width="40px" src="assets/images/clp.png" alt=""></button>
+        <form id="formi_one" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
+                 <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Quick Donate</h3>
+            <div class=" px-4">                 
+                <div class="row m-auto text-center mb-4">
+                   <div style="margin-bottom:20px !important;" class="row m-auto text-center">
+                    <div class=" col-6 mb-2  m-auto">
+                        <small class="text-muted">Total Amount</small>
+                        <input id="totalamount" type="number" name="full_name" placeholder="Amount" class="form-control " required>
+                    </div>
+                    <div class="col-6 mb-2 m-auto">
+                        <small class="text-muted">select plan</small>
+                        <select name="country" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="single">single donation</option>
+                            <option value="monthly">monthly donation</option>
+                        </select>
+                    </div>
+                   </div>
+                   <div class="row mt-4 text-center m-auto">
+                       
+                    <div class="col-6 mt-4 m-auto">
+                        <select name="country" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="single"> SADAQA</option>
+                            <option value="monthly">ZAKAT</option>
+                            <option value="monthly">Genaral Donation</option>
+                        </select>
+                    </div>
+                   
+                    <div class="col-6 mt-4 m-auto">
+                       
+                        <input style="width:100%; font-size:14px;  border-radius:15px; " id="send" value="Donate Now" type="submit" class="form-control ">
+                    </div>
+
+                </div>
+               
+            </div>
+            <p style=" font-weight:bold; color:#fb5200; text-align:center;
+            margin-top:18px !important;">HotLine :   +8801715-412204</p>
+        
+
+           </div>
+            </form>
+      </div>
+<!--====== HEADER PART START ======-->
+<header class="header_area">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_wrapper d-md-flex justify-content-between">
+                    <div class="header_social text-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul>
+                    </div> <!-- header social -->
+
+                    <div class="header_info d-none d-md-block">
+                        <ul>
+                            <li><img src="assets/images/call.png"><a href="javascript:void(0)">+8801715-412204</a></li>
+                            <li><img src="assets/images/mail.png"><a href="javascript:void(0)">info@ufbd.org</a></li>
+                        </ul>
+                    </div> <!-- header info -->
+                </div> <!-- header top wrapper -->
+            </div> <!-- container -->
+        </div> <!-- header top -->
+
+        <div class="header_navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_btn">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbar_btn">
+                        <ul class="navbar-nav m-auto">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0)">About us<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="Board_member.html">Board Members</a></li>
+                                    <li><a href="volunteers.html">Volunteers</a></li>
+                                    <li><a href="partners.html">Our Partners</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                    <li><a href="report.html">Financial Reports</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="javascript:void(0)">Media<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">News</a></li>
+                                    <li><a href="img_gallery.html">Image Gallery</a></li>
+                                    <li><a href="vdo_gallery.html">Video Gallery</a></li>
+                                    <li><a href="zakat_calc.html">Zakat Calculator</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-user"></i> Account<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="profile.html">Account</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </div> <!-- navbar collapse -->
+
+                    <div class="navbar_btn d-none d-sm-block">
+                        <a class="main-btn" href="donate.html"><i class="fa fa-heart"></i> Donate Now</a>
+                    </div>
+
+                </nav> <!-- navbar -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== SLIDER PART START ======-->
+    <section class="slider_area slider-active">
+        <div class="single_slider">
+            <div class="slider_image bg_cover" data-animation="kenburns" style="background-image: url(assets/images/slide/slider-1.jpg)"></div> <!-- slider image -->
+            <div class="slider_content_wrapper d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider_content text-center">
+                                <h5 class="sub_title" data-animation="fadeInUp" data-delay="0.2s">helpless people need </h5>
+                                <h2 class="title" data-animation="fadeInUp" data-delay="0.5s">your kind help</h2>
+                                <p data-animation="fadeInUp" data-delay="0.9s">There will be a day–in our lifetime When we get to celebrate every person on the planet having access to foods</p>
+                                <a href="donate.html" class="donation_btn home_don" > Donate</a>
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- slider content wrapper -->
+        </div> <!-- single slider -->
+        
+        <div class="single_slider">
+            <div class="slider_image bg_cover" data-animation="kenburns" style="background-image: url(assets/images/slide/slider-2.jpg)"></div> <!-- slider image -->
+            <div class="slider_content_wrapper d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider_content text-center">
+                                <h5 class="sub_title" data-animation="fadeInUp" data-delay="0.2s">helpless people need </h5>
+                                <h2 class="title" data-animation="fadeInUp" data-delay="0.5s">your kind help</h2>
+                                <p data-animation="fadeInUp" data-delay="0.9s">There will be a day–in our lifetime When we get to celebrate every person on the planet having access to foods</p>
+                                <a href="donate.html" class="donation_btn home_don"> Donate</a>
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- slider content wrapper -->
+        </div> <!-- single slider -->
+        
+        <div class="single_slider">
+            <div class="slider_image bg_cover" data-animation="kenburns" style="background-image: url(assets/images/slide/slider-3.jpg)"></div> <!-- slider image -->
+            <div class="slider_content_wrapper d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider_content text-center">
+                                <h5 class="sub_title" data-animation="fadeInUp" data-delay="0.2s">helpless people need </h5>
+                                <h2 class="title" data-animation="fadeInUp" data-delay="0.5s">your kind help</h2>
+                                <p data-animation="fadeInUp" data-delay="0.9s">There will be a day–in our lifetime When we get to celebrate every person on the planet having access to foods</p>
+                                <a href="donate.html" class="donation_btn home_don"> Donate</a>
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- slider content wrapper -->
+        </div> <!-- single slider -->
+    </section>
+    <!--====== SLIDER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+    <section class="about_area pt-80 pb-130 bg_cover" style="background-image: url(assets/images/gray-bg.jpg)">
+        <div class="about_shape_1" style="background-image: url(assets/images/shape/shape-1.png)"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="about_left  mt-50">
+                        <div class="about_image">
+                            <img src="assets/images/about.jpg" alt="About">
+                            <div class="help_title">
+                                <h3 style="color:#fff !important" class="title">We Fundraise for Helpless People</h3>
+                            </div>
+                        </div>
+                    </div> <!-- about left -->
+                </div>
+                <div class="col-lg-4">
+                    <div class="about_right d-flex flex-wrap">
+                        <div class="single_about_items mt-50 color-1 text-center">
+                        <div class="about_content">
+                            <h4 class="about_title">Our Mission &amp; Vision</h4>
+                            <p>Universal Foundation is a nonproﬁt organization supported by community leaders, corporate sponsors, churches and concerned citizens join. There will be a day–in our lifetime–when we get to celebrate every person on the planet having access to clean water.</p>
+                        </div>                            
+                        </div> <!-- single about items -->
+                    </div> <!-- about right -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="about_shape_2" style="background-image: url(assets/images/shape/shape-1.png)"></div>
+    </section>
+    <!--====== ABOUT PART ENDS ======-->
+    <!--====== UPCOMING & PREVIOUS EVENT PART START ======-->
+<section class="event_area pt-95 pb-130">
+        <div class="container">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-lg-6 col-md-6">                    
+                    <div class="card card-body p-1 text-center" style="border-radius: 50px 0 0 0; background-color: #ffffffc9;">Up-coming Event</div>
+                    <div class="single_event event_color-1">
+                        <div class="event_image">
+                            <img src="assets/images/event-1.jpg">
+                        </div>
+                        <div class="event_content">
+                            <h4 class="event_title"><a href="#">4th Annual Schoolyard Dash 5K</a></h4>
+                            <p><img src="assets/images/map.png"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span></p>
+                            <a href="event_view.html" class="more1">Read More</a>
+                            <a href="donate.html" class="donation_btn"> Donate Now</a>
+                        </div>
+                    </div> <!-- single event -->
+                </div>
+                
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_event d-lg-flex flex-column-reverse event_color-2">
+                        <div class="event_image">
+                            <img src="assets/images/event-2.jpg">
+                        </div>
+                        <div class="event_content">
+                            <h4 class="event_title"><a href="#">A wooden fishing boat rests on Deal</a></h4>
+                            <p><img src="assets/images/map.png" alt="map"> <span>2018/12/28 00:00 69 Warren Street, New York, USA</span></p>
+                            <a href="event_view.html" class="more">Read More</a>
+                        </div>
+                    </div> <!-- single event -->
+                    <div class="card card-body p-1 text-center" style="border-radius: 0 0 50px 0; background-color: #ffffffc9;">Recent Event</div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== UPCOMING & PREVIOUS EVENT PART ENDS ======-->
+    <!--====== Sponsor PART START ======-->
+    <section class="campaing_doner_area">
+        <div class="container mt-5">
+    <!-- Section heading -->
+    <h3 class="text-center font-weight-bold mb-5">Sponsor a Child</h3>
+    <!-- Grid row -->
+    <div class="row">
+    <div class="col-12">
+        <div class="sponsors_highlight_slider">
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                            <ul class="causes_icon">
+                                <li><a href="sponsor_view.html" class="btn btn-info btn-sm py-1 px-4">View</a></li>
+                            </ul>
+                            <div class="causes_shape">
+                                <img src="assets/images/shape/shape-4.png" alt="shape">
+                            </div>
+                            <div class="causes_progress">
+                                <div class="bar_inner">
+                                    <div class="bar progress_line" data-width="80" style="width: 80%;"><span class="percentage">80%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="causes_content">
+                            <ul class="causes_meta">
+                               
+                            </ul>
+                            <h4 class="causes_title"><a href="sponsor_view.html" style="color:#fb5200; ">student Name</a></h4>
+                            <p class="location_ ml-2">Location: Bangladesh
+                            </p>
+                            
+                            <p class="founding_goal ml-2">
+                                Funding Goal:
+                            </p>
+                            <p class="ml-2 pb-2">50,000 ৳ </p>
+                            <a href="donate.html" class="donation_btn mb-3"> Donation</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                            <ul class="causes_icon">
+                                <li><a href="sponsor_view.html" class="btn btn-info btn-sm py-1 px-4">View</a></li>
+                            </ul>
+                            <div class="causes_shape">
+                                <img src="assets/images/shape/shape-4.png" alt="shape">
+                            </div>
+                            <div class="causes_progress">
+                                <div class="bar_inner">
+                                    <div class="bar progress_line" data-width="59" style="width: 59%;"><span class="percentage">59%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="causes_content">
+                            <ul class="causes_meta">
+                                
+                            </ul>
+                            <h4 class="causes_title"><a href="sponsor_view.html" style="color:#fb5200; ">student Name</a></h4>
+                            <p class="location_ ml-2">Location: Bangladesh
+                            </p>
+                            
+                            <p class="founding_goal ml-2">
+                                Funding Goal:
+                            </p>
+                            <p class="ml-2 pb-2">50,000 ৳ </p>
+                            <a href="donate.html" class="donation_btn mb-3"> Donation</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                            <ul class="causes_icon">
+                                <li><a href="sponsor_view.html" class="btn btn-info btn-sm py-1 px-4">View</a></li>
+                            </ul>
+                            <div class="causes_shape">
+                                <img src="assets/images/shape/shape-4.png" alt="shape">
+                            </div>
+                            <div class="causes_progress">
+                                <div class="bar_inner">
+                                    <div class="bar progress_line" data-width="59" style="width: 59%;"><span class="percentage">59%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="causes_content">
+                            <ul class="causes_meta">
+                            </ul>
+                            <h4 class="causes_title"><a href="sponsor_view.html" style="color:#fb5200; ">student Name</a></h4>
+                            <p class="location_ ml-2">Location: Bangladesh
+                            </p>
+                            
+                            <p class="founding_goal ml-2">
+                                Funding Goal:
+                            </p>
+                            <p class="ml-2 pb-2">50,000 ৳ </p>
+                            <a href="donate.html" class="donation_btn mb-3"> Donation</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                            <ul class="causes_icon">
+                                <li><a href="sponsor_view.html" class="btn btn-info btn-sm py-1 px-4">View</a></li>
+                            </ul>
+                            <div class="causes_shape">
+                                <img src="assets/images/shape/shape-4.png" alt="shape">
+                            </div>
+                            <div class="causes_progress">
+                                <div class="bar_inner">
+                                    <div class="bar progress_line" data-width="59" style="width: 59%;"><span class="percentage">59%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="causes_content">
+                            <ul class="causes_meta">
+                               
+                            </ul> <h4 class="causes_title"><a href="sponsor_view.html" style="color:#fb5200; ">student Name</a></h4>
+                            <p class="location_ ml-2">Location: Bangladesh
+                            </p>
+                            
+                            <p class="founding_goal ml-2">
+                                Funding Goal:
+                            </p>
+                            <p class="ml-2 pb-2">50,000 ৳ </p>
+                            <a href="donate.html" class="donation_btn mb-3"> Donation</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                            <ul class="causes_icon">
+                                <li><a href="sponsor_view.html" class="btn btn-info btn-sm py-1 px-4">View</a></li>
+                            </ul>
+                            <div class="causes_shape">
+                                <img src="assets/images/shape/shape-4.png" alt="shape">
+                            </div>
+                            <div class="causes_progress">
+                                <div class="bar_inner">
+                                    <div class="bar progress_line" data-width="59" style="width: 59%;"><span class="percentage">59%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="causes_content">
+                            <ul class="causes_meta">
+                            </ul> <h4 class="causes_title"><a href="sponsor_view.html" style="color:#fb5200; ">student Name</a></h4>
+                            <p class="location_ ml-2">Location: Bangladesh
+                            </p>
+                            
+                            <p class="founding_goal ml-2">
+                                Funding Goal:
+                            </p>
+                            <p class="ml-2 pb-2">50,000 ৳ </p>
+                            <a href="donate.html" class="donation_btn mb-3"> Donation</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                            <ul class="causes_icon">
+                                <li><a href="sponsor_view.html" class="btn btn-info btn-sm py-1 px-4">View</a></li>
+                            </ul>
+                            <div class="causes_shape">
+                                <img src="assets/images/shape/shape-4.png" alt="shape">
+                            </div>
+                            <div class="causes_progress">
+                                <div class="bar_inner">
+                                    <div class="bar progress_line" data-width="59" style="width: 59%;"><span class="percentage">59%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="causes_content">
+                            <ul class="causes_meta">
+                                
+                            </ul> <h4 class="causes_title"><a href="sponsor_view.html" style="color:#fb5200; ">student Name</a></h4>
+                            <p class="location_ ml-2">Location: Bangladesh
+                            </p>
+                            
+                            <p class="founding_goal ml-2">
+                                Funding Goal:
+                            </p>
+                            <p class="ml-2 pb-2">50,000 ৳ </p>
+                            <a href="donate.html" class="donation_btn mb-3"> Donation</a>
+                        </div>
+                        
+                    </div>
+                    
+            </div>
+            <!-- Grid column -->
+
+        </div>
+    </div>      
+    </div>
+    <!-- Grid row -->
+</div>
+<div class="col-12 mt-3 text-center">
+    <a href="sponsor_view.html" class="btn btn-danger btn-sm" style="padding:15px">VIEW ALL STUDENTS</a>
+</div>
+    </section>
+    <!--====== Sponsor PART ENDS ======-->
+
+
+
+
+    <!--====== Highlights Program START ======-->
+    <section class="volunteer_area pt-130 pb-40">
+            <h2 style="text-align:center; padding-bottom:20px;" calss="text-center py-4">Heghilight Program</h2>
+        <div class="container">
+            <!-- Grid row -->
+    <div class="row">
+        <div class="col-12">
+            <div class="sponsors_highlight_slider1">
+                <!-- Grid column -->
+                <div style="background:transparent;" class="tiny-slide">
+                  <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                            <div class="causes_image one">
+                                <img src="assets/images/causes-1.jpg" alt="causes">
+                               
+    
+                                
+                            </div>
+                           
+                        </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div style="background:transparent;" class="tiny-slide">
+                  <div style="background:transparent;" class="card card-body p-0 single_causes causes_color_1 mt-30">
+                            <div style="background:transparent;" class="causes_image one">
+                                <img src="assets/images/causes-1.jpg" alt="causes">
+
+                            </div>
+                          
+                        </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="tiny-slide">
+                  <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                            <div class="causes_image one">
+                                <img src="assets/images/causes-1.jpg" alt="causes">
+                               
+                                </div>
+                            
+                            
+                        </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="tiny-slide">
+                  <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                            <div class="causes_image one">
+                                <img src="assets/images/causes-1.jpg" alt="causes">
+                               
+                            </div>
+                           
+                        </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="tiny-slide">
+                  <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                            <div class="causes_image one">
+                                <img src="assets/images/causes-1.jpg" alt="causes">
+                            
+                            </div>
+                        </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="tiny-slide">
+                  <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                            <div class="causes_image one">
+                                <img src="assets/images/causes-1.jpg" alt="causes">
+                              
+                            </div>
+                            
+                        </div>
+                        
+                </div>
+                <!-- Grid column -->
+    
+            </div>
+        </div>      
+        </div>
+        <!-- Grid row -->
+
+
+        </div> <!-- container -->
+    </section>
+    <!--====== Highlights Program ENDS ======-->
+    
+    <section style="padding:80px 0px;" id="hotline">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <form id="formi_one" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
+            <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Quick Donate</h3>
+       <div class=" px-4">                 
+           <div class="row m-auto text-center mb-4">
+              <div style="margin-bottom:20px !important;" class="row m-auto text-center">
+               <div class=" col-6 mb-2  m-auto">
+                   <small class="text-light">Total Amount</small>
+                   <input id="totalamount" type="number" name="full_name" placeholder="Amount" class="form-control " required>
+               </div>
+               <div class="col-6 mb-2 m-auto">
+                   <small class="text-light">select plan</small>
+                   <select name="country" class="form-control">
+                       <option selected disabled>Select</option>
+                       <option value="single">single donation</option>
+                       <option value="monthly">monthly donation</option>
+                   </select>
+               </div>
+              </div>
+              <div class="row mt-4 text-center m-auto">
+                  
+               <div class="col-6 mt-4 m-auto">
+                   <select name="country" class="form-control">
+                       <option selected disabled>Select</option>
+                       <option value="single"> SADAQA</option>
+                       <option value="monthly">ZAKAT</option>
+                       <option value="monthly">Genaral Donation</option>
+                   </select>
+               </div>
+              
+               <div class="col-6 mt-4 m-auto">
+                  
+                   <input style="width:100%; font-size:14px;  border-radius:15px; " id="send" value="Donate Now" type="submit" class="form-control ">
+               </div>
+
+           </div>
+          
+       </div>
+       <p style=" font-weight:bold; color:#fb5200; text-align:center;
+       margin-top:27px !important;">HotLine :   +8801715-412204</p>
+   
+
+      </div>
+       </form>
+
+
+
+
+   
+   
+   
+    </section>
+    <!--====== VOLUNTEER PART START ======-->
+    <section class="volunteer_area_2 pt-80 pb-130  bg_cover" >
+        <div class="volunteer_shape_1" style="background-image: url(assets/images/shape/shape-1.png)"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="volunteer_content_2 mt-45">
+                        <h3 style="color:#fb5200 !important" class="title">We’ve more then 80,000 volunteers</h3>
+                        <p>Universal Foundation is a nonproﬁt organization supported by community leaders, corporate sponsors, churches and concerned citizens join. There will be a day–in our lifetime–when we get to celebrate .</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row mt-50">
+                        <div class="col-12 mb-4">
+                            <a href="volunteer_form.html" class="d-block">
+                                <div class="card  ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/bd_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For Local Volunteer</h4>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="volunteer_form.html" class="d-block">
+                                <div class="card ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/global_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For International Volunteer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="volunteer_shape_2" style="background-image: url(assets/images/shape/shape-2.png)"></div>
+    </section>
+    <!--====== VOLUNTEER PART ENDS ======-->
+    
+    <!--====== BLOG PART START ======-->
+    <section class="blog_area pt-130 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center pb-10">
+                       
+                        <h3 class="title">Our Latest Blog</h3>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <a href="">
+                            <div class="causes_image">
+                                <img src="assets/images/causes-1.jpg">
+                            </div>
+                        </a>
+                        <div class="causes_content shadow">
+                            <h4 class="causes_title"><a href="">Our first blog</a></h4>
+                            <p><a href="" class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nulla...</a></p>
+                            <a href="donate.html" class="donation_btn"> Donation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <a href="">
+                            <div class="causes_image">
+                                <img src="assets/images/causes-1.jpg">
+                            </div>
+                        </a>
+                        <div class="causes_content shadow">
+                            <h4 class="causes_title"><a href="">Our first blog</a></h4>
+                            <p><a href="" class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nulla...</a></p>
+                            <a href="donate.html" class="donation_btn"> Donation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <a href="">
+                            <div class="causes_image">
+                                <img src="assets/images/causes-1.jpg">
+                            </div>
+                        </a>
+                        <div class="causes_content shadow">
+                            <h4 class="causes_title"><a href="">Our first blog</a></h4>
+                            <p><a href="" class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nulla...</a></p>
+                            <a href="donate.html" class="donation_btn"> Donation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-3 text-center">
+                    <a href="blog.html" class="btn btn-danger btn-sm mt-4" style="padding:15px">VIEW ALL PROJECTS</a>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== BLOG PART ENDS ======-->
+
+    <!--====== PARTNERS PART START ======-->
+    <section class="mb-50">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="support_title text-center">
+                        <h4 class="title">Our trusted doners organizations who support us</h4>
+                        <hr class="text-muted mx-auto mb-0 mt-4" width="50px">
+                    </div>
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="sponsors_highlight_slider2">
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://plmr.co.uk/wp-content/uploads/2019/04/1200px-Aljazeera_eng.svg.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Qatar_Airways_Logo.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://www.freepnglogos.com/uploads/ibm-logo-png/ibm-logo-ibm-logos-download-12.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Google_logo_%282013-2015%29.svg/1024px-Google_logo_%282013-2015%29.svg.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://pngshare.com/wp-content/uploads/2021/06/Login-Netflix-Logo-6.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    <!--slide :start-->
+                        <div class="tiny-slide">
+                            <div class="single_support d-flex align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="https://seeklogo.com/images/W/walton-logo-8655B6D7F3-seeklogo.com.png" style="min-width: 125px;">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    <!--slide :end-->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div>
+    </section>
+    <!--====== PARTNERS PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+    <footer class="footer_area">
+        <div class="footer_widget pt-80 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 order-md-1 order-lg-1 mb-4">
+                        <div class="footer_about">
+                            <a href="#">
+                                <img src="assets/images/logo.png">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi in, nihil ab, facere dolor atque quam delectus sapiente aspernatur, molestiae ullam dolores, voluptas accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 order-md-3 order-lg-2 mb-4">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Menu</h5>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Link</h5>
+                                <ul class="link">
+                                    <li><a href="#">Water Purify</a></li>
+                                    <li><a href="#">Food Collect</a></li>
+                                    <li><a href="#">Health Fund</a></li>
+                                    <li><a href="#">Free Education</a></li>
+                                    <li><a href="#">Poor Health</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-md-2 order-lg-3">
+                        <div class="footer_contact mb-4">
+                            <h5 class="footer_title mb-2">Contact us</h5>
+                            <p style="color: #a1a1a1f0;">43, North Dhanmondi Kalabagan, Dhaka-1205</p>
+                        </div>
+                        <div class="footer_subscribe">
+                            <h5 class="footer_title">Subscribe Our Newsletter</h5>
+                            <div class="subscribe_form mt-2">
+                                <form action="#">
+                                    <input type="email" name="subscribe_mail" placeholder="example@mail.com" required>
+                                    <button><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            
+                        </div> <!-- footer link  --> 
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer_copyright text-center">
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright &copy; UFBD 2022. All Rights Reserved.</p>
+                </div> <!-- copyright -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== GO TO TOP PART START ======-->
+    
+    <div class="go-top-area">
+        <div class="go-top-wrap">
+            <div class="go-top-btn-wrap">
+                <div class="go-top go-top-btn">
+                    <i class="fa fa-angle-double-up"></i>
+                    <i class="fa fa-angle-double-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--====== GO TO TOP PART ENDS ======-->
+    <script src="assets/js/index.js"></script>
+    <script src="dist/js/splide.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+<script>
+var slider = tns({
+    container: ".sponsors_highlight_slider",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    controls: true,
+    controlsPosition: "bottom",
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+var slider = tns({
+    container: ".sponsors_highlight_slider1",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3500,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    controls: false,
+    controlsPosition: "bottom",
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
+var slider = tns({
+    container: ".sponsors_highlight_slider2",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 4000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    controls: false,
+    controlsPosition: "bottom",
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+var slider2 = tns({
+    container: ".partners_slider",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    responsive: {
+        400: {
+            items: 2
+        },
+        767: {
+            items: 3
+        },
+
+        1000: {
+            items: 5
+        }
+    },
+});
+
+
+
+</script>
+</body>
+</html>

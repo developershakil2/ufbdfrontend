@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!--------------google analytics: start------------------->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175448919-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175448919-1');
+</script>
+<!--------------google analytics: end------------------->
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/png" rel="shortcut icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+
+    <title>Universal Foundation</title>
+</head>
+<body>
+    
+    <div id="popup2" style=" border:6px solid #fb5200; border-radius:20px;"  class="card  card-body col-lg-6 col-md-8 mx-auto">
+        
+        <button id="close_icon2" onClick="popup2()" style="background:transparent; border:none; outline:none"  ><img style="float:right; margin-right:5px;" height="40px" width="40px" src="assets/images/clp.png" alt=""></button>
+        <form id="formi_one" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
+                 <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Quick Donate</h3>
+            <div class=" px-4">                 
+                <div class="row m-auto text-center mb-4">
+                   <div style="margin-bottom:20px !important;" class="row m-auto text-center">
+                    <div class=" col-6 mb-2  m-auto">
+                        <small class="text-muted">Total Amount</small>
+                        <input id="totalamount" type="number" name="full_name" placeholder="Amount" class="form-control " required>
+                    </div>
+                    <div class="col-6 mb-2 m-auto">
+                        <small class="text-muted">select plan</small>
+                        <select name="country" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="single">single donation</option>
+                            <option value="monthly">monthly donation</option>
+                        </select>
+                    </div>
+                   </div>
+                   <div class="row mt-4 text-center m-auto">
+                       
+                    <div class="col-6 mt-4 m-auto">
+                        <select name="country" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="single"> SADAQA</option>
+                            <option value="monthly">ZAKAT</option>
+                            <option value="monthly">Genaral Donation</option>
+                        </select>
+                    </div>
+                   
+                    <div class="col-6 mt-4 m-auto">
+                       
+                        <input style="width:100%; font-size:14px;  border-radius:15px; " id="send" value="Donate Now" type="submit" class="form-control ">
+                    </div>
+
+                </div>
+               
+            </div>
+            <p style=" font-weight:bold; color:#fb5200; text-align:center;
+            margin-top:18px !important;">HotLine :   +8801715-412204</p>
+        
+
+           </div>
+            </form>
+      </div>
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <div class="fixed-bottom text-center">
+        <button onClick="openpop()" style="width:200px; padding-top:5px; border-radius:6px" class="btn btn-danger btn-sm" style="border-radius: 20px 20px 0 0;"> Quick Donate</button>
+    </div>
+<!--====== HEADER PART START ======-->
+<header class="header_area">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_wrapper d-md-flex justify-content-between">
+                    <div class="header_social text-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul>
+                    </div> <!-- header social -->
+
+                    <div class="header_info d-none d-md-block">
+                        <ul>
+                            <li><img src="assets/images/call.png"><a href="javascript:void(0)">+8801715-412204</a></li>
+                            <li><img src="assets/images/mail.png"><a href="javascript:void(0)">info@ufbd.org</a></li>
+                        </ul>
+                    </div> <!-- header info -->
+                </div> <!-- header top wrapper -->
+            </div> <!-- container -->
+        </div> <!-- header top -->
+
+        <div class="header_navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_btn">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbar_btn">
+                        <ul class="navbar-nav m-auto">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascript:void(0)">About us<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                  <li><a href="Board_member.html">Board Members</a></li>
+                                    <li><a href="volunteers.html">Volunteers</a></li>
+                                    <li><a href="partners.html">Our Partners</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                    <li><a href="report.html">Financial Reports</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="javascript:void(0)">Media<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">News</a></li>
+                                    <li><a href="img_gallery.html">Image Gallery</a></li>
+                                    <li><a href="vdo_gallery.html">Video Gallery</a></li>
+                                    <li><a href="zakat_calc.html">Zakat Calculator</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-user"></i> Account<i class="fa fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="profile.html">Account</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </div> <!-- navbar collapse -->
+
+                    <div class="navbar_btn d-none d-sm-block">
+                        <a class="main-btn" href="donate.html"><i class="fa fa-heart"></i> Donate Now</a>
+                    </div>
+
+                </nav> <!-- navbar -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+    <!--====== PAGE CONTENT START ======-->
+    <section class="causes_area pt-160 pb-70">
+        <div class="container">
+            <h4 style="color:#fb5200;font-weight:bold; font-size:30px margin-bottom:10px;"class="doner_title text-center">Donation</h4>
+
+
+
+
+
+
+
+
+
+            <form id="formi_one" action="" method="POST" class="form-horizontal formi_one  pt-4 pb-2" id="multistep_form">
+            
+                <div class=" px-4">                 
+                    <div class="row mb-4">
+                        <div class=" col-12 mb-2">
+                            <small style="color:#fff;font-weight:bold; font-size:18px" class="text">Total Amount</small>
+                            <input id="totalamount" type="number" name="full_name" class="form-control " required>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff;font-weight:bold; font-size:18px" class="text">First Name</small>
+                            <input type="text" name="full_name" class="form-control" required>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff;font-weight:bold; font-size:18px" class="text">Last Name</small>
+                            <input type="email" name="last_name" class="form-control" required>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff;font-weight:bold; font-size:18px" class="text">Transaction ID</small>
+                            <input type="text" name="full_name" class="form-control" required>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff; font-weight:bold; font-size:18px" class="text">Contact No</small>
+                            <input type="number" name="full_name" class="form-control" required>
+                        </div>
+                       
+                        
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff; font-weight:bold; font-size:18px" class="text">Select payment method</small>
+                            <select name="country" class="form-control">
+                               
+                                <option selected disabled>select</option>
+                                <option value="Afghanistan">Bkash</option>
+                                <option value="Åland Islands">Rocket</option>
+                                <option value="Åland Islands">Nagad</option>
+                                <option value="Åland Islands">Upay</option>
+                                <option value="Albania">M Cash</option>
+                                <option value="Algeria">Sure Cash</option>
+                                <option value="American Samoa">U Cash</option>
+                                <option value="American Samoa">Islami Bank</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff; font-weight:bold; font-size:18px" class="text">select option</small>
+                            <select name="country" class="form-control">
+                                
+                            
+                                <option selected disabled>select</option>
+                                <option value="Afghanistan">SADAQA</option>
+                                <option value="Åland Islands">ZAKAT</option>
+                                <option value="Åland Islands">POOR CHILD</option>
+                                <option value="Åland Islands">POOR MADRASA STUDENTS</option>
+                                <option value="Åland Islands">GENAREL DONATION</option>
+                            </select>
+                        </div>
+                       
+                        <div class="col-lg-6 mb-2">
+                            <small style="color:#fff; font-weight:bold; font-size:18px" class="text-">Screenshot</small>
+                            <input type="file" name="district" class="form-control" required><span style="font-size:12px;color:#fb5200">(optional)</span>
+                        </div>
+        
+                        <div class="col-lg-12 text-center mb-2">
+                           
+                            <input style="width:180px; margin:auto; border-radius:20px; padding:5px; " id="send" value="Submit" type="submit" class="form-control my-4 ">
+                        </div>
+                    </div>
+                         
+                </div>
+                </form>
+        
+        
+
+
+            <div class="row mt-4 justify-content-center">
+                <!--payment method :start-->
+                    <div class="col col-lg-3 col-md-4 col-sm-6">
+                        <a data-toggle="modal" data-target="#bkash_modal">
+                            <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="assets/images/bkash.png" style="min-width: 80px;height:70px">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!--payment method :end-->
+                <!--payment method :start-->
+                    <div class="col col-lg-3 col-md-4 col-sm-6">
+                        <a data-toggle="modal" data-target="#nagad_modal">
+                            <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="assets/images/nagad.png" style="min-width: 80px;height:70px">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!--payment method :end-->
+                  <!--payment method :start-->
+                  <div class="col col-lg-3 col-md-4 col-sm-6">
+                    <a data-toggle="modal" data-target="#rocket">
+                        <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                            <div class="support_logo">
+                                <img src="assets/images/rocket.png" style="min-width: 80px; height:70px">
+                            </div>
+                            <div class="support_content media-body">
+                                <h5 class="title"></h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!--payment method :end-->
+             <!--payment method :start-->
+             <div class="col col-lg-3 col-md-4 col-sm-6">
+                <a data-toggle="modal" data-target="#mcash">
+                    <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                        <div class="support_logo">
+                            <img src="assets/images/mcash.jpg" style="min-width: 80px; height:70px">
+                        </div>
+                        <div class="support_content media-body">
+                            <h5 class="title"></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <!--payment method :end-->
+          <!--payment method :start-->
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <a data-toggle="modal" data-target="#surecash">
+                <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                    <div class="support_logo">
+                        <img src="assets/images/surecash.png" style="min-width: 80px; height:70px">
+                    </div>
+                    <div class="support_content media-body">
+                        <h5 class="title"></h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    <!--payment method :end-->
+     <!--payment method :start-->
+     <div class="col col-lg-3 col-md-4 col-sm-6">
+        <a data-toggle="modal" data-target="#ucash">
+            <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                <div class="support_logo">
+                    <img src="assets/images/ucash.png" style="min-width: 80px; height:70px">
+                </div>
+                <div class="support_content media-body">
+                    <h5 class="title"></h5>
+                </div>
+            </div>
+        </a>
+    </div>
+<!--payment method :end-->
+             <!--payment method :start-->
+             <div class="col col-lg-3 col-md-4 col-sm-6">
+                <a data-toggle="modal" data-target="#upay">
+                    <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                        <div class="support_logo">
+                            <img src="assets/images/upay.png" style="min-width: 80px; height:70px">
+                        </div>
+                        <div class="support_content media-body">
+                            <h5 class="title"></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <!--payment method :end-->
+                <!--payment method :start-->
+                    <div class="col col-lg-3 col-md-4 col-sm-6">
+                        <a data-toggle="modal" data-target="#bank_modal">
+                            <div class="card card-body single_support shadow-sm d-inline-block align-items-center mt-30">
+                                <div class="support_logo">
+                                    <img src="assets/images/bank.png" style="min-width: 80px;height:70px">
+                                </div>
+                                <div class="support_content media-body">
+                                    <h5 class="title"></h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!--payment method :end-->
+            </div>
+            <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== PAGE CONTENT ENDS ======-->
+    <!--====== VOLUNTEER SILDER PART START ======-->
+    <section class="campaing_doner_area">
+        <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <hr class="text-muted mb-4">
+            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                            <a data-toggle="modal" data-target="#bkash_modal">
+                                <div class="card  ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/bd_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For Local Volunteer</h4>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="" class="d-block">
+                                <div class="card ra_for card-body shadow-sm">
+                                <div class="campaing_items items_color_2 d-flex">
+                                    <div class="items_icon">
+                                        <img src="assets/images/global_flag.png" width="45px">
+                                    </div>
+                                    <div class="items_content media-body mt-2 ml-2">
+                                        <h4 class="items_title">Register For International Volunteer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+        </div>
+  
+</div>
+    </section>
+    <!--====== VOLUNTEER SILDER PART ENDS ======-->
+    <!--====== Highlights Program START ======-->
+    <section class="volunteer_area pt-130 pb-40">
+        <h2 style="text-align:center; padding-bottom:20px;" calss="text-center py-4">Heighilight Program</h2>
+    <div class="container">
+        <!-- Grid row -->
+<div class="row">
+    <div class="col-12">
+        <div class="sponsors_highlight_slider1">
+            <!-- Grid column -->
+            <div style="background:transparent;" class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image one">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                           
+
+                            
+                        </div>
+                       
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div style="background:transparent;" class="tiny-slide">
+              <div style="background:transparent;" class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div style="background:transparent;" class="causes_image one">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+
+                        </div>
+                      
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image one">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                           
+                            </div>
+                        
+                        
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image one">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                           
+                        </div>
+                       
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image one">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                        
+                        </div>
+                    </div>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="tiny-slide">
+              <div class="card card-body p-0 single_causes causes_color_1 mt-30">
+                        <div class="causes_image one">
+                            <img src="assets/images/causes-1.jpg" alt="causes">
+                          
+                        </div>
+                        
+                    </div>
+                    
+            </div>
+            <!-- Grid column -->
+
+        </div>
+    </div>      
+    </div>
+    <!-- Grid row -->
+
+
+    </div> <!-- container -->
+</section>
+<!--====== Highlights Program ENDS ======-->
+    <!--====== FOOTER PART START ======-->
+    <footer class="footer_area">
+        <div class="footer_widget pt-80 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 order-md-1 order-lg-1 mb-4">
+                        <div class="footer_about">
+                            <a href="#">
+                                <img src="assets/images/logo.png">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi in, nihil ab, facere dolor atque quam delectus sapiente aspernatur, molestiae ullam dolores, voluptas accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 order-md-3 order-lg-2 mb-4">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Menu</h5>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+
+                            <div class="footer_link">
+                                <h5 class="footer_title">Hightlight Link</h5>
+                                <ul class="link">
+                                    <li><a href="#">Water Purify</a></li>
+                                    <li><a href="#">Food Collect</a></li>
+                                    <li><a href="#">Health Fund</a></li>
+                                    <li><a href="#">Free Education</a></li>
+                                    <li><a href="#">Poor Health</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-md-2 order-lg-3">
+                        <div class="footer_contact mb-4">
+                            <h5 class="footer_title mb-2">Contact us</h5>
+                            <p style="color: #a1a1a1f0;">43, North Dhanmondi Kalabagan, Dhaka-1205</p>
+                        </div>
+                        <div class="footer_subscribe">
+                            <h5 class="footer_title">Subscribe Our Newsletter</h5>
+                            <div class="subscribe_form mt-2">
+                                <form action="#">
+                                    <input type="email" name="subscribe_mail" placeholder="example@mail.com" required>
+                                    <button><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            
+                        </div> <!-- footer link  --> 
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer_copyright text-center">
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright &copy; UFBD 2022. All Rights Reserved.</p>
+                </div> <!-- copyright -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== GO TO TOP PART START ======-->
+    <div class="go-top-area">
+        <div class="go-top-wrap">
+            <div class="go-top-btn-wrap">
+                <div class="go-top go-top-btn">
+                    <i class="fa fa-angle-double-up"></i>
+                    <i class="fa fa-angle-double-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== GO TO TOP PART ENDS ======-->
+<!--bkash modal :start-->
+<div class="modal fade" id="bkash_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-family: unset;">How to donate using Bkash?</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #f3f5f8b3;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <table class="table table-sm mb-0">
+                    <tbody>
+                        <tr>
+                            <td>Bkash Number</td>
+                            <td>:</td>
+                            <td>012345678900</td>
+                        </tr>
+                        <tr>
+                            <td>Reference #</td>
+                            <td>:</td>
+                            <td>012345678900</td>
+                        </tr>
+                        <tr>
+                            <td>Counter #</td>
+                            <td>:</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="text-muted mt-0">
+                <form action="" method="POST">
+                    <div class="text-center">Enter your wallet number</div>
+                    <input type="tel" name="number" class="form-control mb-2"required>
+                    <div class="text-muted text-center">Enter Transaction ID</div>
+                    <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                    <div class="text-center mt-2">
+                        <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <hr class="text-muted">
+                <h5 style="font-family: unset;">Instruction...</h5>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="col-6 nav-item">
+                    <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                  </li>
+                  <li class="col-6 nav-item">
+                    <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                    <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                    <ul style="list-style-type: disclosure-closed;">
+                        <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                        <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                        <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                        <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                        <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                        <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                        <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                        <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                    </ul>
+                    <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                  </div>
+                  <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                    <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                    <ul style="list-style-type: disclosure-closed;">
+                        <li><small class="text-muted">Open your bkash app</small></li>
+                        <li><small class="text-muted">Click on 'Send Money'</small></li>
+                        <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                        <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                        <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                        <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                        <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                    </ul>
+                    <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--bkash modal :end-->
+
+
+
+
+
+
+
+
+
+
+
+<!--nagad modal :start-->
+<div class="modal fade" id="surecash" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family: unset;">How to donate using Nagad?</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #f3f5f8b3;">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                  <table class="table table-sm mb-0">
+                      <tbody>
+                          <tr>
+                              <td>Bkash Number</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Reference #</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Counter #</td>
+                              <td>:</td>
+                              <td>1</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <hr class="text-muted mt-0">
+                  <form action="" method="POST">
+                      <div class="text-center">Enter your wallet number</div>
+                      <input type="tel" name="number" class="form-control mb-2"required>
+                      <div class="text-muted text-center">Enter Transaction ID</div>
+                      <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                      <div class="text-center mt-2">
+                          <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-12">
+                  <hr class="text-muted">
+                  <h5 style="font-family: unset;">Instruction...</h5>
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                    </li>
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                          <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                    </div>
+                    <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Open your bkash app</small></li>
+                          <li><small class="text-muted">Click on 'Send Money'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--nagad modal :end-->
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+<!--nagad modal :start-->
+<div class="modal fade" id="rocket" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-family: unset;">How to donate using Nagad?</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #f3f5f8b3;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <table class="table table-sm mb-0">
+                    <tbody>
+                        <tr>
+                            <td>Rocket Number</td>
+                            <td>:</td>
+                            <td>012345678900</td>
+                        </tr>
+                        <tr>
+                            <td>Reference #</td>
+                            <td>:</td>
+                            <td>012345678900</td>
+                        </tr>
+                        <tr>
+                            <td>Counter #</td>
+                            <td>:</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="text-muted mt-0">
+                <form action="" method="POST">
+                    <div class="text-center">Enter your wallet number</div>
+                    <input type="tel" name="number" class="form-control mb-2"required>
+                    <div class="text-muted text-center">Enter Transaction ID</div>
+                    <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                    <div class="text-center mt-2">
+                        <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <hr class="text-muted">
+                <h5 style="font-family: unset;">Instruction...</h5>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="col-6 nav-item">
+                    <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                  </li>
+                  <li class="col-6 nav-item">
+                    <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                    <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                    <ul style="list-style-type: disclosure-closed;">
+                        <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                        <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                        <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                        <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                        <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                        <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                        <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                        <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                    </ul>
+                    <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                  </div>
+                  <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                    <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                    <ul style="list-style-type: disclosure-closed;">
+                        <li><small class="text-muted">Open your bkash app</small></li>
+                        <li><small class="text-muted">Click on 'Send Money'</small></li>
+                        <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                        <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                        <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                        <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                        <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                    </ul>
+                    <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--nagad modal :end-->
+
+
+
+
+<!--nagad modal :start-->
+<div class="modal fade" id="ucash" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family: unset;">How to donate using Nagad?</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #f3f5f8b3;">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                  <table class="table table-sm mb-0">
+                      <tbody>
+                          <tr>
+                              <td>U-cash Number</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Reference #</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Counter #</td>
+                              <td>:</td>
+                              <td>1</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <hr class="text-muted mt-0">
+                  <form action="" method="POST">
+                      <div class="text-center">Enter your wallet number</div>
+                      <input type="tel" name="number" class="form-control mb-2"required>
+                      <div class="text-muted text-center">Enter Transaction ID</div>
+                      <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                      <div class="text-center mt-2">
+                          <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-12">
+                  <hr class="text-muted">
+                  <h5 style="font-family: unset;">Instruction...</h5>
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                    </li>
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                          <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                    </div>
+                    <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Open your bkash app</small></li>
+                          <li><small class="text-muted">Click on 'Send Money'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--nagad modal :end-->
+  
+  
+
+
+
+
+
+
+
+<!--nagad modal :start-->
+<div class="modal fade" id="mcash" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family: unset;">How to donate using Nagad?</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #f3f5f8b3;">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                  <table class="table table-sm mb-0">
+                      <tbody>
+                          <tr>
+                              <td>Mcash Number</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Reference #</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Counter #</td>
+                              <td>:</td>
+                              <td>1</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <hr class="text-muted mt-0">
+                  <form action="" method="POST">
+                      <div class="text-center">Enter your wallet number</div>
+                      <input type="tel" name="number" class="form-control mb-2"required>
+                      <div class="text-muted text-center">Enter Transaction ID</div>
+                      <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                      <div class="text-center mt-2">
+                          <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-12">
+                  <hr class="text-muted">
+                  <h5 style="font-family: unset;">Instruction...</h5>
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                    </li>
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                          <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                    </div>
+                    <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Open your bkash app</small></li>
+                          <li><small class="text-muted">Click on 'Send Money'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--nagad modal :end-->
+  
+
+
+
+
+
+
+
+<!--nagad modal :start-->
+<div class="modal fade" id="upay" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family: unset;">How to donate using Nagad?</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #f3f5f8b3;">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                  <table class="table table-sm mb-0">
+                      <tbody>
+                          <tr>
+                              <td>Upay Number</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Reference #</td>
+                              <td>:</td>
+                              <td>012345678900</td>
+                          </tr>
+                          <tr>
+                              <td>Counter #</td>
+                              <td>:</td>
+                              <td>1</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <hr class="text-muted mt-0">
+                  <form action="" method="POST">
+                      <div class="text-center">Enter your wallet number</div>
+                      <input type="tel" name="number" class="form-control mb-2"required>
+                      <div class="text-muted text-center">Enter Transaction ID</div>
+                      <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                      <div class="text-center mt-2">
+                          <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-12">
+                  <hr class="text-muted">
+                  <h5 style="font-family: unset;">Instruction...</h5>
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                    </li>
+                    <li class="col-6 nav-item">
+                      <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                          <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                    </div>
+                    <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                      <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li><small class="text-muted">Open your bkash app</small></li>
+                          <li><small class="text-muted">Click on 'Send Money'</small></li>
+                          <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                          <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                          <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                          <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                          <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                      </ul>
+                      <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--nagad modal :end-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--nagad modal :start-->
+<div class="modal fade" id="nagad_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-family: unset;">How to donate using Nagad?</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #f3f5f8b3;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <table class="table table-sm mb-0">
+                    <tbody>
+                        <tr>
+                            <td>Nagad Number</td>
+                            <td>:</td>
+                            <td>012345678900</td>
+                        </tr>
+                        <tr>
+                            <td>Reference #</td>
+                            <td>:</td>
+                            <td>012345678900</td>
+                        </tr>
+                        <tr>
+                            <td>Counter #</td>
+                            <td>:</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="text-muted mt-0">
+                <form action="" method="POST">
+                    <div class="text-center">Enter your wallet number</div>
+                    <input type="tel" name="number" class="form-control mb-2"required>
+                    <div class="text-muted text-center">Enter Transaction ID</div>
+                    <input type="text" name="transaction_id" class="form-control" required style="background-color: #f5f5dcde;">
+                    <div class="text-center mt-2">
+                        <button type="submit" name="submit_donation" class="btn btn-info btn-sm">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <hr class="text-muted">
+                <h5 style="font-family: unset;">Instruction...</h5>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="col-6 nav-item">
+                    <a class="nav-link text-center active" data-toggle="tab" href="#ussd" role="tab">USSD</a>
+                  </li>
+                  <li class="col-6 nav-item">
+                    <a class="nav-link text-center" data-toggle="tab" href="#bkash_app" role="tab">Bkash App</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active px-4" id="ussd" role="tabpanel">
+                    <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with USSD...</h6>
+                    <ul style="list-style-type: disclosure-closed;">
+                        <li><small class="text-muted">Go to bKash Menu by dialing *247#</small></li>
+                        <li><small class="text-muted">Choose 'Send Money' option by pressing '1'</small></li>
+                        <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                        <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                        <li><small class="text-muted">Enter a reference against your payment : 1</small></li>
+                        <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                        <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                        <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                    </ul>
+                    <img src="assets/images/bkash_step_ussd.jpg" class="mt-2 w-100">
+                  </div>
+                  <div class="tab-pane fade show px-4" id="bkash_app" role="tabpanel">
+                    <h6 class="text-muted mt-4" style="font-family: unset;">Please use following steps to donate with App...</h6>
+                    <ul style="list-style-type: disclosure-closed;">
+                        <li><small class="text-muted">Open your bkash app</small></li>
+                        <li><small class="text-muted">Click on 'Send Money'</small></li>
+                        <li><small class="text-muted">Enter our personal number : 01234567890</small></li>
+                        <li><small class="text-muted">Enter BDT amount you have to pay : xxxx</small></li>
+                        <li><small class="text-muted">Now enter your PIN to confirm: xxxx</small></li>
+                        <li><small class="text-muted">Done! You will get a confirmation SMS</small></li>
+                        <li><small class="text-muted">Enter your bKash wallet/contact number and transaction ID and submit the form.</small></li>
+                    </ul>
+                    <img src="assets/images/bkash_step_app.jpg" class="mt-2 w-100">
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--nagad modal :end-->
+<!--bank modal :start-->
+<div class="modal fade" id="bank_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-family: unset;">How to donate on bank?</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #f3f5f8b3;">
+       <div class="row">
+        <div class="col-12">
+            <p>Any individual and organization may be Universal’ Foundation’s donor. Universal Foundation has numerous life changing programs for underprivileged children and women of our country. We encourage you to get involved, and bring a change to society.</p>
+            <ul class="mt-2 px-4" style="list-style-type: disclosure-closed;">
+                 <li>Account Name: UNIVERSAL FOUNDATION.</li>
+                 <li>Bank Name: Islami Bank Bangladesh Limited.</li>
+                 <li>Account No: 31124</li>
+                 <li>Branch: Bahadur Bazar, Dinajpur Branch.</li>
+                 <li>BKASH/ NAGAD PAYMENT INFORMATION</li>
+                 <li>Bkash/ Nagad Number- 01715–412204 (Personal)</li>
+                 <li>টাকা পাঠানোর পরে অবশ্যই কনফার্ম করবেন।</li>
+                 <li>Account Name: Universal Foundation</li>
+                 <li>Account Number: 31124</li>
+                 <li>Bank Name: Islami Bank Bangladesh Ltd.</li>
+                 <li>Branch: Dinajpur Sadar Banch</li>
+                 <li>SWIFT CODE: IBBLBDDH138</li>
+                 <li>Routing Number: 125280671</li>
+                 <li>Mobile:01715412204</li>
+            </ul>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--bank modal :end-->
+<script src="assets/js/index.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+<script>
+    
+var slider = tns({
+    container: ".sponsors_highlight_slider1",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3500,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    controls: false,
+    controlsPosition: "bottom",
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
+var slider3 = tns({
+    container: ".volunteers_slider",
+    items: 1,
+    controls: false,
+    slideBy: "page",
+    mouseDrag: true,
+    loop: true,
+    rewind: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    speed: 500,
+    gutter: 15,
+    responsive: {
+        450: {
+            items: 1
+        },
+        767: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -528,5 +528,37 @@ var slider = tns({
     }
 });
 </script>
+
+<script>
+      
+    var slider = tns({
+        container: ".sponsors_highlight_slider1",
+        items: 1,
+        controls: false,
+        slideBy: "page",
+        mouseDrag: true,
+        loop: true,
+        rewind: true,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        autoplayTimeout: 3500,
+        nav: false,
+        speed: 500,
+        gutter: 15,
+        controls: false,
+        controlsPosition: "bottom",
+        responsive: {
+            450: {
+                items: 1
+            },
+            767: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+    </script>
 </body>
 </html>

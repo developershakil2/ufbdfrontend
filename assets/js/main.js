@@ -387,13 +387,13 @@ $(function() {
 
 const ban_btn = document.getElementById('ban_btn');
 const inter_btn = document.getElementById("inter_btn");
-const formi_one = document.getElementById("formi_one");
+const formi_one = document.getElementById("formi_on");
 const formi_tow = document.getElementById("formi_tow");
 
 formi_tow.style.display = "none";
 ban_btn.style.color = "#fff";
 ban_btn.style.background = "#fb5200";
-formi_one.style.display = "block";
+
 
 ban_btn.addEventListener("click", ()=>{
   
@@ -414,133 +414,4 @@ inter_btn.style.background = "#fb5200";
 ban_btn.style.background = "none";
 ban_btn.style.color ="#fff"
 })
-
-
-const totalAmount = document.getElementById("totalamount");
-const pay_amount = document.getElementById("payable_amount");
-const payNow = document.getElementById("payNow");
-const value2 = pay_amount;
-const value1 = totalAmount;
-payNow.addEventListener("click", ()=>{
-   value1.value2;
-   alert("its okay")
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -37,54 +37,6 @@
   }
 </style>
 <body>
-    
-    <div id="popup2" style=" border:6px solid #fb5200; border-radius:20px;"  class="card  card-body col-lg-6 col-md-8 mx-auto">
-        
-        <button id="close_icon2" onClick="popup2()" style="background:transparent; border:none; outline:none"  ><img style="float:right; margin-right:5px;" height="40px" width="40px" src="assets/images/clp.png" alt=""></button>
-        <form id="formi_one" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
-                 <h3 style="text-align:center; color: #fb5200; padding:8px 0px;">Quick Donate</h3>
-            <div class=" px-4">                 
-                <div class="row m-auto text-center mb-4">
-                   <div style="margin-bottom:20px !important;" class="row m-auto text-center">
-                    <div class=" col-6 mb-2  m-auto">
-                        <small class="text-muted">Total Amount</small>
-                        <input id="totalamount" type="number" name="full_name" placeholder="Amount" class="form-control " required>
-                    </div>
-                    <div class="col-6 mb-2 m-auto">
-                        <small class="text-muted">select plan</small>
-                        <select name="country" class="form-control">
-                            <option selected disabled>Select</option>
-                            <option value="single">single donation</option>
-                            <option value="monthly">monthly donation</option>
-                        </select>
-                    </div>
-                   </div>
-                   <div class="row mt-4 text-center m-auto">
-                       
-                    <div class="col-6 mt-4 m-auto">
-                        <select name="country" class="form-control">
-                            <option selected disabled>Select</option>
-                            <option value="single"> SADAQA</option>
-                            <option value="monthly">ZAKAT</option>
-                            <option value="monthly">Genaral Donation</option>
-                        </select>
-                    </div>
-                   
-                    <div class="col-6 mt-4 m-auto">
-                       
-                        <input style="width:100%; font-size:14px;  border-radius:15px; " id="send" value="Donate Now" type="submit" class="form-control ">
-                    </div>
-
-                </div>
-               
-            </div>
-            <p style=" font-weight:bold; color:#fb5200; text-align:center;
-            margin-top:18px !important;">HotLine :   +8801715-412204</p>
-        
-
-           </div>
-            </form>
-      </div>
     <!--====== PRELOADER PART START ======-->
     <div id="preloader">
         <div class="preloader">
@@ -195,33 +147,240 @@
    
     <div class="links row">
       <button id="ban_btn" class="btn btn-outline col-6 p-2">For All Bangladeshi Volunteers</button>
-      <button id="inter_btn" class="btn btn-outline col-6 p-3">For International Volunteers</button>
+      <button onClick="myfunction()" id="inter_btn" class="btn btn-outline col-6 p-3">For International Volunteers</button>
     </div>
 
+     
 
-    
-    <form id="formi_one" action="" method="POST" class="form-horizontal form  pt-4 pb-2" id="multistep_form">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <form id="formi_on" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
         <fieldset id="account">
-            <div class="panel-body px-4">                 
+            <div  class="panel-body px-4">                 
                 <div class="row mb-4">
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Full Name</small>
+                        <small class="text-light">Full Name</small>
                         <input type="text" name="full_name" class="form-control" required>
                     </div>
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Birth Date</small>
+                        <small class="text-light">Birth Date</small>
                         <input type="date" name="birth_date" class="form-control" required>
                     </div>
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Email</small>
+                        <small class="text-light">Email</small>
                         <input type="text" name="email" class="form-control" required>
                     </div>
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Phone</small>
+                        <small class="text-light">Phone</small>
                         <input type="tel" name="phone" class="form-control" required>
                     </div>
+                    
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Country</small>
+                        <small class="text-light">Gender</small>
+                        <select name="gender" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-2">
+                        <small class="text">Blood Group</small>
+                        <select name="gender" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="A-">A-</option>
+                            <option value="A+">A+</option>
+                            <option value="B-">B-</option>
+                            <option value="B+">B+</option>
+                            <option value="AB+">AB+</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text">T-shirt size</small>
+                        <select name="gender" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="A-">XS</option>
+                            <option value="A+">S</option>
+                            <option value="B-">M</option>
+                            <option value="B+">L</option>
+                            <option value="AB+">Xl</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Which division are you in</small>
+                        <input type="text" name="division" class="form-control" required>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">District Name</small>
+                        <input type="text" name="district" class="form-control" required>
+                    </div> <div class="col-lg-6 mb-2">
+                        <small class="text-light">Your picture</small>
+                        <input type="file" name="district" class="form-control" required>
+                    </div>
+                    <div class="col-12">
+                        <small class="text-light">Address</small>
+                        <input type="text" name="address" class="form-control" required>
+                    </div>
+                </div>
+                     <div class="text-center">
+                      
+                     </div>
+            </div>
+            </fieldset>
+            <fieldset id="contact">
+                <div class="panel-body px-4">
+                   <div class="row mb-4">
+                       <div class="col-lg-6 mb-2">
+                           <small class="text-light">Profession</small>
+                           <input type="text" name="profession" class="form-control" required>
+                       </div>
+                       <div class="col-lg-6 mb-2">
+                           <small class="text-light">Highest Level of Education</small>
+                           <select name="education_level" class="form-control">
+                               <option selected disabled>Select</option>
+                               <option value="JSC/JDC">JSC/JDC</option>
+                               <option value="SSC">SSC</option>
+                               <option value="HSC">HSC</option>
+                               <option value="Diploma in Engieerning">Diploma in Engieerning</option>
+                               <option value="Bachelor (Engineering & Technology)">Bachelor (Engineering & Technology)</option>
+                               <option value="Master's">Master's</option>
+                           </select>
+                       </div>
+                       <div class="col-lg-6 mb-2">
+                           <small class="text-light">Experience in Social Work</small>
+                           <input type="text" name="work_experience" class="form-control" required>
+                       </div>
+                       <div class="col-lg-6 mb-2">
+                           <small class="text-light">Your Current Education Institute(If)</small>
+                           <input type="text" name="education_institute" class="form-control" required>
+                       </div>
+                       <div class="col-12 mb-3">
+                           <small class="text-light d-block">Your are available for Volunteerism at</small>
+                           <div class="row">
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="sunday" value="Sunday" checked>
+                                     <label class="form-check-label text-light" for="sunday">Sunday</label>
+                                   </div>
+                               </div>
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="monday" value="Monday">
+                                     <label class="form-check-label text-light" for="monday">Monday</label>
+                                   </div>
+                               </div>
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="tuesday" value="Tuesday">
+                                     <label class="form-check-label text-light" for="tuesday">Tuesday</label>
+                                   </div>
+                               </div>
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="wednesday" value="Wednesday" checked>
+                                     <label class="form-check-label text-light" for="wednesday">Wednesday</label>
+                                   </div>
+                               </div>
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="thursday" value="Thursday" checked>
+                                     <label class="form-check-label text-light" for="thursday">Thursday</label>
+                                   </div>
+                               </div>
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="friday" value="Friday" checked>
+                                     <label class="form-check-label text-light" for="friday">Friday</label>
+                                   </div>
+                               </div>
+                               <div class="col col-lg-3 col-md-3 col-sm-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="saturday" value="Saturday">
+                                     <label class="form-check-label  text-light" for="saturday">Saturday</label>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-12 mb-2">
+                           <small class="text-light">Emergency Contact Person Name</small>
+                           <input type="text" name="person_name" class="form-control" required>
+                       </div>
+                       <div class="col-lg-6 mb-2">
+                           <small class="text-light">Relationship with you</small>
+                           <input type="text" name="person_relation" class="form-control" required>
+                       </div>
+                       <div class="col-lg-6 mb-2">
+                           <small class="text-light">Contact Person Phone Number</small>
+                           <input type="tel" name="person_number" class="form-control" required>
+                       </div>
+                               <div class="col-12">
+                                   <div class="form-check form-check-inline">
+                                     <input class="form-check-input" type="checkbox" id="confirm_box">
+                                     <label class="form-check-label text-light" for="confirm_box ">I do hereby declare that the information furnished above is true.</label>
+                                   </div>
+                               </div>                    
+                   </div>
+    
+                   <div class="d-flex justify-content-between">
+                   <input type="submit" name="submit" style="background:#f86048;border:none; outline:none; padding:7px 25px; color:#fff;border-radius:10px;" class=" submiti" value="Submit" id="next3"/>
+                   </div>
+               </div>
+               </fieldset>
+               
+        </form>
+    
+    
+    
+    
+    <form id="formi_tow" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
+            
+            <div class=" px-4">                 
+                <div class="row mb-4">
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">First Name</small>
+                        <input type="text" name="full_name" class="form-control" required>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Last Name</small>
+                        <input type="text" name="full_name" class="form-control" required>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Email</small>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Contact Us</small>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Gender</small>
+                        <select name="gender" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Nationality</small>
                                     <select name="country" class="form-control">
                                         <option selected disabled>Select</option>
                                         <option value="Afghanistan">Afghanistan</option>
@@ -470,50 +629,91 @@
                                         <option value="Zimbabwe">Zimbabwe</option>
                                     </select>
                     </div>
+                   
+                   
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Gender</small>
+                        <small class="text-light">Your Intereste</small>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Your Address</small>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <small class="text">Blood Group</small>
                         <select name="gender" class="form-control">
                             <option selected disabled>Select</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Others">Others</option>
+                            <option value="A-">A-</option>
+                            <option value="A+">A+</option>
+                            <option value="B-">B-</option>
+                            <option value="B+">B+</option>
+                            <option value="AB+">AB+</option>
                         </select>
                     </div>
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Blood Group</small>
-                        <input type="text" name="blood_group" class="form-control" required>
+                        <small class="text">T-shirt size</small>
+                        <select name="gender" class="form-control">
+                            <option selected disabled>Select</option>
+                            <option value="A-">XS</option>
+                            <option value="A+">S</option>
+                            <option value="B-">M</option>
+                            <option value="B+">L</option>
+                            <option value="AB+">Xl</option>
+                        </select>
                     </div>
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">T-shirt Size</small>
-                        <input type="number" name="tshirt_size" class="form-control" required>
+                        <small class="text-light"> Emergency Contact Details</small>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+    
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light"> Biography</small>
+                        <input type="text" name="email" class="form-control" required>
+                    </div>
+    
+    
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Volunteerity Start Date</small>
+                        <input type="date" name="birth_date" class="form-control" required>
+                    </div>
+                    
+    
+                    <div class="col-lg-6 mb-2">
+                        <small class="text-light">Volunteerity End Date </small>
+                        <input type="date" name="birth_date" class="form-control" required>
+                    </div>
+    
+                    
+                    <div class="col-lg-12 mb-2">
+                        <small class="text-light"> Passport No</small>
+                        <input type="text" name="birth_date" class="form-control" required>
                     </div>
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">Which division are you in</small>
-                        <input type="text" name="division" class="form-control" required>
+                        <small class="text-light">Your Picture</small>
+                        <input type="file" name="district" class="form-control" required><span style="font-size:12px;color:#fb5200">(recommended image size 160x160)</span>
                     </div>
+    
+                    
                     <div class="col-lg-6 mb-2">
-                        <small class="text-muted">District Name</small>
-                        <input type="text" name="district" class="form-control" required>
+                        <small class="text-light">Passport Image(Scan copy) </small>
+                        <input type="file" name="district" class="form-control" required>
                     </div>
-                    <div class="col-12">
-                        <small class="text-muted">Address</small>
-                        <input type="text" name="address" class="form-control" required>
-                    </div>
+    
+                    
                 </div>
-                     <div class="text-center">
-                      
-                     </div>
+                     
             </div>
-            </fieldset>
+           
             <fieldset id="contact">
                 <div class="panel-body px-4">
                    <div class="row mb-4">
                        <div class="col-lg-6 mb-2">
-                           <small class="text-muted">Profession</small>
+                           <small class="text-light">Profession</small>
                            <input type="text" name="profession" class="form-control" required>
                        </div>
                        <div class="col-lg-6 mb-2">
-                           <small class="text-muted">Highest Level of Education</small>
+                           <small class="text-light">Highest Level of Education</small>
                            <select name="education_level" class="form-control">
                                <option selected disabled>Select</option>
                                <option value="JSC/JDC">JSC/JDC</option>
@@ -525,15 +725,15 @@
                            </select>
                        </div>
                        <div class="col-lg-6 mb-2">
-                           <small class="text-muted">Experience in Social Work</small>
+                           <small class="text-light">Experience in Social Work</small>
                            <input type="text" name="work_experience" class="form-control" required>
                        </div>
                        <div class="col-lg-6 mb-2">
-                           <small class="text-muted">Your Current Education Institute(If)</small>
+                           <small class="text-light">Your Current Education Institute(If)</small>
                            <input type="text" name="education_institute" class="form-control" required>
                        </div>
                        <div class="col-12 mb-3">
-                           <small class="text-muted d-block">Your are available for Volunteerism at</small>
+                           <small class="text-light d-block">Your are available for Volunteerism at</small>
                            <div class="row">
                                <div class="col col-lg-3 col-md-3 col-sm-12">
                                    <div class="form-check form-check-inline">
@@ -584,11 +784,11 @@
                            <input type="text" name="person_name" class="form-control" required>
                        </div>
                        <div class="col-lg-6 mb-2">
-                           <small class="text-muted">Relationship with you</small>
+                           <small class="text-light">Relationship with you</small>
                            <input type="text" name="person_relation" class="form-control" required>
                        </div>
                        <div class="col-lg-6 mb-2">
-                           <small class="text-muted">Contact Person Phone Number</small>
+                           <small class="text-light">Contact Person Phone Number</small>
                            <input type="tel" name="person_number" class="form-control" required>
                        </div>
                                <div class="col-12">
@@ -598,33 +798,37 @@
                                    </div>
                                </div>                    
                    </div>
-   
+    
                    <div class="d-flex justify-content-between">
-                   <input type="submit" name="submit" style="background:#fb5200;border:none; outline:none; padding:7px 25px; color:#fff;border-radius:10px;" class=" submiti" value="Submit" id="next3"/>
+                   <input type="submit" name="submit" style="background:#f86048;border:none; outline:none; padding:7px 25px; color:#fff;border-radius:10px;" class=" submiti" value="Submit" id="next3"/>
                    </div>
                </div>
                </fieldset>
                
-        </form>
-
-
-
-
-    <form id="formi_tow" action="" method="POST" class="form-horizontal  pt-4 pb-2" id="multistep_form">
-            
-            <div class=" px-4">                 
-                <div class="row mb-4">
-                    <div class="col-lg-6 mb-2">
-                       
-                </div>
-                     
-            </div>
-           
-          
-               
             
             
         </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     </div>
     </div>
         </div>
@@ -765,5 +969,72 @@ $(document).ready(function(){
 
 });
 </script>
+<script>
+    
+const ban_btn = document.getElementById('ban_btn');
+const inter_btn = document.getElementById("inter_btn");
+const formi_one1 = document.getElementById("formi_one1");
+const formi_one = document.getElementById("formi_one");
+const formi_tow = document.getElementById("formi_tow");
+
+formi_tow.style.display = "none";
+ban_btn.style.color = "#fff";
+ban_btn.style.background = "#fb5200";
+formi_one.style.display = "block";
+
+ban_btn.addEventListener("click", ()=>{
+  
+inter_btn.style.color = "#fff";
+inter_btn.style.background = "none";
+formi_tow.style.display = "none";
+  ban_btn.style.color = "#fff";
+  formi_one.style.display = "block";
+ban_btn.style.background = "#fb5200";
+})
+
+inter_btn.addEventListener("click", ()=>{
+    alert("none ok");
+    formi_one1.style.display = "none";
+inter_btn.style.color = "#fff";
+inter_btn.style.background = "#fb5200";
+  formi_tow.style.display = "block";
+  formi_one.style.display = "none";
+ban_btn.style.background = "none";
+ban_btn.style.color ="#fff"
+})
+
+
+
+
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -93,7 +93,7 @@ p {
 section#hotline {
   background: #111;
 }
-
+#inter_btn:focus #formi_one{display:none;}
 
 
 

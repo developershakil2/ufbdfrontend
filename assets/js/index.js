@@ -32,4 +32,6 @@ function popup2(){
 
 }
 
-
+function  formi_one1() {
+    alert("is ok")
+}
